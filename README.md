@@ -2,5 +2,5 @@
 API de uma Plataforma de Blogs: API que controla os posts e os comentários de um blog.
 
 # Integrantes
-Alejandro Farias
+Alejandro Farias   
 Leonardo Serqueira
