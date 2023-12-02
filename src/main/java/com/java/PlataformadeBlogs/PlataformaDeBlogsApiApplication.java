@@ -1,5 +1,6 @@
 package com.java.PlataformadeBlogs;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -12,7 +13,10 @@ import io.swagger.v3.oas.models.info.License;
 
 @SpringBootApplication
 public class PlataformaDeBlogsApiApplication {
-
+	@Bean
+	public ModelMapper modelMapper() {
+		return new ModelMapper();
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(PlataformaDeBlogsApiApplication.class, args);
 	}
